@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tut.css">
+    <title>Document</title>
+</head>
+<body>
+
+         <ul style="padding-left: 100px;" >
+         <li>first item</li>
+         <li>second item</li>
+         <li>third item</li>
+         
+         </ul>
+         
+         
+            <a href="https://www.google.co.in" target="_blank" id="google">google</a>
+            <h2>boss</h2>
+            
+            <a href="https://www.google.co.in" class="i" >toggle</a>
+         <div id="pop">
+           <h3>1</h3>
+           <h3>dd</h3>
+           <h3>d</h3>
+           <h3>d</h3>
+           <h3>d</h3>
+           <h3>d</h3>
+           <h3>d</h3>
+           <h3>d</h3>
+           <h3>d</h3>
+           <h3>d</h3>
+           <h3>d</h3>
+                 </div>
+         
+
+      
+        
+         
+
+         <!-- units
+     1)  ABSOLUTE     
+     {height}   mm,cm,px,pt(more than px),pc(more than pt),px 
+
+    2) RELATIVE
+     {font-size} 2em(double than the standard font size) 
+     {width} 70 vw(it is 70 times ,1% of total viewport)
+     {height} 70 vh(it is 70 times ,1% of total viewport)
+    -->
+
+    <!-- box model(content->padding->border->margin) -->
+    <!--(shorthand) padding/margin- top right bottom leormt or top and bottom  left and right  -->
+    <div class="box">
+        <img src="./keyboard.jpg" alt="">
+        <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident commodi optio culpa, aliquid tenetur magni dignissimos pariatur, ipsam molestiae, voluptate harum? Iusto officia fuga deserunt enim modi magni soluta inventore sit fugit, hic veniam neque illo, omnis ut repellendus harum magnam aut reprehenderit ad quisquam ipsum vel. Debitis</p>
+    </div>
+    <h2><u >flexbox</u></h2>
+    <div class="flex">
+        <div class="item-1 item">a</div>
+        <div class="item-2 item">b</div>
+        <div class="item-3 item">c</div>
+        <div class="item-4 item">d</div>
+        <div class="item-5 item">e</div>
+        </div>
+
+        <h2 class="animation">grid</h2>
+
+
+        <div class="grid" >
+            <div class="grid-item-1 BLOCK" >a</div>
+            <div class="grid-item-2 BLOCK">b</div>
+            <div class="grid-item-3 BLOCK">c</div>
+            <div class="grid-item-4 BLOCK">d</div>
+            <div class="grid-item-5 BLOCK">e</div>
+            </div>
+<div>
+<button class="button">submit</button>
+
+</div>
+
+<!------------------------------------------RANGE SLIDER------------------------------------------------------>
+<div class="VALUE->DEFAULT  SHOW WHEN LOADED">
+    range<input type="range" min="0" max="200" value="100" oninput="rangeValue.innerText = this.value" step="2">
+    <p id="rangeValue" >100</p>
+    </div>
+
+<!----------------------------------------COLOR PICKER-------------------------------------------------------->
+color picker<input type="color"  name="favcolor" value="#ff0000">
+<!-- value-> we can take deafault value in this othrwise default color show black -->
+<br>
+<!-- -----------------------------------INTERMEDIATE CHECKBOX------------------ -->
+Checkbox: <input type="checkbox" id="myCheck">
+
+<p>Click the buttons to set or return the indeterminate state of the checkbox.</p>
+
+<button onclick="myFunction()">Return state</button>
+
+<button onclick="myFunction2()">Set state</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myCheck").indeterminate;
+  document.getElementById("demo").innerHTML = x;
+}
+
+function myFunction2() {
+  var x = document.getElementById("myCheck").indeterminate = true;
+}
+</script>
+
+<!-- ---------------------------------TAG---------------------------------------------------------------------->
+<!-- <button>&times</button> cross closing button; -->
+<abbr title="hyper text"><h5>html</h5></abbr>
+<mark>highlight</mark> 
+<code>as</code>
+ <!-- <video src="" preload="auto" loop controls muted autoplay></video> -->
+ <!-- <audio src=""></audio> -->
+
+ <!-- ------MAP -->
+ <!-- <img src="" alt="" usemap="#er">
+ <map name="er"></map>
+ <area shape="rect,circle,poly" coords="" href="hyperlink after click open given link" alt=""> -->
+ <!-- -----MAP--- -->
+
+ <title></title>
+
+ <dl><dt>HTML</dt>  </dl>
+
+    <details>  
+        <summary>Copyright 2011-2014.</summary>  
+        <p> - by JavaTpoint. All Rights Reserved.</p>   </details> 
+
+    <iframe src="" frameborder="0"></iframe>
+
+    <fieldset>  
+        <legend>Employee basic information:</legend>  </fieldset>
+
+        
+        <marquee>This is an example of html marquee </marquee>  
+        
+        <!-- <svg width="100" height="100">  
+            <circle cx="50" cy="50" r="40" stroke="yellow" stroke-width="4" fill="red" />  </svg>    -->
+            <svg width="200" height="100">  
+                <rect width="200" height="100" stroke="yellow" stroke-width="4" fill="red" />  
+            </svg>  
+            
+            <progress value="43" max="100"></progress>  
+          <meter value="30" min="1" max="100"></meter>
+
+         <!-- <table border="2">
+            <thead>
+                <tr>
+                    <td colspan="3">1</td>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>a</td>
+                    <td>ab</td>
+                    <td>c</td>
+                </tr>
+            </tbody>
+         </table> -->
+
+        <!-- <form action="" method="get">
+         a <input type="text" name="as" id="">
+         v<input type="password" name="pass" id="">
+         <button type="submit">s</button>
+        </form> -->
+    </body>
+</html>

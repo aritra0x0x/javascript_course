@@ -1,0 +1,418 @@
+/* FONT AWSOME */
+/* CLIP GNERATOR */
+/* ICONPACKS */
+/* PURE JS-> VANILLA JS */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+    /* p{color: #000;} p->selector color->property #000->value */
+    /* atrributes i html->class atrri,id,title,style */
+}
+
+/* li{
+  background-color: yellow;  
+  list-style-position: inside;
+  without list-style-position color add except list dots
+} */
+
+/* ----------------------------------------------------psudo class--------------------------------------------- */
+li:first-child{
+    color: rgb(7, 145, 145);  /*ATTRIBUTS*/
+}
+li:nth-child(2){
+    color: rgb(212, 25, 106);
+}
+li:last-child{
+    color: blue;
+}
+
+ /* li:only-child{
+    if only one child are there
+}  */
+
+
+/* ------------------------------------------------PSUDO SELECTOR------------------------------------------------- */
+
+/*unvisited link  */
+#google:link{ 
+    color: rgb(64, 82, 64);
+}
+
+/*color remain constant*/
+#google:visited{ 
+    color: rgb(31, 0, 114);
+    
+    }
+
+    /*(imp)selected link wnen click it show but not constant */
+#google:active{ 
+    color: rgb(72, 15, 15);
+}
+
+#google:hover{
+    color: chartreuse;
+}
+
+/*(imp) the color remain constant after click */
+#google:focus{
+    color: green;
+}
+/* text:focus{
+    outline:2px solid blue;   in form text to change clolr  after tap
+  
+    
+
+
+} */
+/*----------------------------psudo elements--------------------------------------- */
+/* #h2::after{content:"😂"; can set after h2} #h2:before{} */
+
+/*----------------------------psudo elements--------------------------------------- */
+
+
+
+
+
+/* ------------------------------------------CURSOR------------------------------------------- */
+/* h2{scroll-behavior: smooth;
+    cursor: pointer;} */
+
+
+
+
+/* ---------------------------------------------ADVANCED SELECTOR -------------------------------------------*/
+ h2+a{  /*or h2 ~ a{}*/
+    color: red;
+    
+}
+/* /* div > img{} *  to go inside / 
+*/
+
+ul li{  /*for child selector*/
+    color: blueviolet;
+}   
+#pop{
+    /* width: 50%; */
+    height: 400px; ;
+
+    /* background: linear-gradient(to right,red,blue); */
+    /* background: radial-gradient(blue 10%,red 20%)  RADIAL GRADIENT IS SHAPE */
+    background: radial-gradient(circle,blue 10%,red 20%) ;
+ 
+}
+
+/* ---------------------------------------------TEXT MANIPULATION-------------------------------------- */
+/* ONLY USED IN LINK OR ANCHOR TAG */
+/* a{
+    line through .overline ,underline
+    text-decoration:none;
+} */
+h2{
+    text-shadow:2px 2px 2px red ;
+    /* text-shadow:offset-x offset-y blur-radius color ; */
+    /* same work in box-radius */
+}
+/* h2{
+    text-align:centre;
+    text-align:justify; (it streched to same length on every end of line)
+    text-transform: capitalize;
+} */
+
+/*--------------------------------------------- FONT MANIPULATION --------------------------------------*/
+/* h2{
+    font-weight: 100; (it make more bolded in font )
+    font-family:  
+    font-size: ;
+     font-style: ; (obligue and italic)
+    
+} */
+
+/* float: --> it is used in left/right/up/down of an image/text it wrap the inline text from the normal behaviour */
+
+/* ---------------------------------POSITION-------------------------------------------------------------------- */
+div.box{
+    border:5px solid red;
+    width: 50%;
+    height: 300px;
+    overflow: auto;
+    /* as due to height border will min and text get overflow
+    so overflow wrap it */
+/* position: absolute; it overlap the
+/* position: relative; it doenst is it have relation to div
+/* position: fixed; it is fixed to viewport,HEADER DISSAPEAR
+/* position: sticky; it is fixed to to header also viewport (static+fixed)
+left: 10%; */
+
+/* --------------------------------------------------DISPLAY---------- */
+/* display: block,inline->same line
+,contents; */
+}
+
+/* -------------------------------------------------FLEXBOX--------------------------------------------------------------------------------- */
+.flex{
+    background-color: beige;
+    padding: 15px;
+    margin: 50px;
+    display: flex;
+    
+    flex-direction: row; 
+/* flex-direction: row-reverse; it little bit shift to right so use after that use (justify-content: flex-start)
+Notice that when you set the direction to a reversed row or column, start and end are also reversed of (JUSTIFY-CONTENT) */
+  /* flex-direction: column; when column then (JUSTIFY CONTENT) & (ALIGN-ITEMS) CHANGES TO VERTICAL AND HORIZONTAL */
+
+  
+    justify-content:center;   /*--------HORIZONTAL *-----------------------/
+    /* justify-content: space-evenly; */
+    align-items: center;      /* VERTICAL */
+    flex-wrap: wrap;  
+    /*-------------------- align-items: ;  //y-->axis VERTICALLY*---------/
+   
+    
+
+    /* ------------------------------FLEX SHORTHAND---------------------------------------------------------------------- */
+    /*----(SHARTHAND)flex: grow shrink basis -----------------------------*/
+    /*----------------------(SHARTHAND)flex-flow: ROW WRAP;-----------------*/
+    
+    
+    /* height: 600px; */
+    /*------------align-content:flex-start;(ALIGNS A FLEX CONTAINER'S LINES WITHIN THE FLEX CONTAINER-------------------- 
+    --------WHEN THERE IS EXTRA IS [EXTRA SPACE ON VERTICALLY AXIS]*When there is only one line, align-content has no effect----.*/
+}
+.item{
+   background-color: brown;
+   color: aliceblue;
+   padding: 15px;
+   margin: 10px;
+   
+   /* flex-basis: 20%; */
+   /* pix or % */
+   flex-grow: 1;
+ 
+   /* or can write flex as global */
+   /* fil the remaining space in item glex-grow */
+   /* any value we more than 1 is constant changes but if we take diff in item-1 or than vary */
+}
+.item-1{
+   
+    order: 0;
+    /* order: ; //to change the position */
+    /* height: 100px; */
+    /* flex-shrink: 0; (if we dont want to shrink) */
+    /* flex-shrink: 2; (it shrink two times faster) */
+  
+
+}
+.item-2{
+    /* order: 0; */
+    align-self: flex-start;
+
+    /* align-self: ;  //like align-items but 
+    it only use in particular item */
+}
+.item-5{
+    flex-basis: 50%; 
+    /* if this then out of this container
+    so have to use wrap in container */
+  
+}
+
+/* -----------------------------GRID----------------------------------------------- */
+
+.grid{
+    margin: 10px;
+    display: grid;
+
+/* ---------------------------custom grid------------------------------------------------------ */
+/* --col-track-size:auto;
+grid-template-columns: var(--col-track-size); */
+
+
+/*-------------------- ROW/COLUMN TEMP------------------------------------------------------------------- */
+    grid-template-rows:auto auto;
+/*--grid-template-columns: auto 100px auto;(it show 100px space btw two column)-------*/
+    grid-template-columns: auto auto auto;  /*also 1fr->fraction 1fr 1fr*----------------*/
+    justify-content:space-around; /*start,end ,centre ,space-around*/
+    
+/* ----------------------------------REPEAT SHORTHAND------------------------------------------------------ */
+/*-grid-template-columns: repeat(3,1fr);  SHORTHAND REPEAT(NO OF COL 3,SIZE)-------------------*/
+/*-grid-template-columns:2000px repeat(2,1fr);  1 col REPEAT(2 &3 col,SIZE)-------*/
+/*-grid-template-columns:2000px repeat(2,1fr 1fr);  1 col REPEAT(2 &3(rep twice)4 & 5 col,SIZE)-------*/
+
+/* -----------------------------------MINMAX SHORTHAND------------------------------------------------------- */
+
+   
+ 
+     /* ----------------------------------------GAP----------------------------------------------------- */
+     /* row-gap: 120px; */
+     /* column-gap: 120px; */
+
+     /* grid-gap: 120px 20px;  (shorthand)grid-gap: column row*/ 
+
+
+
+    }  
+.BLOCK{
+    background-color: brown;
+    color: aliceblue;
+    padding: 15px;
+    margin: 10px;
+    width: 5%;
+    
+} 
+/* .grid-item-1{
+grid-row: 1/  2; (start 1 to end 2)
+grid-column: 1/  3;
+
+grid-area:2/1/span 2/ span 3; (shaorhand)  grid-area: row-start/column-start/row-end/column-end
+} */
+
+/* --------------------------TRANSITION--------------------------------------------------------------------------------- */
+.button{
+    margin: 20px 10px;
+    padding: 10px 15px;
+    border: none;
+color: white;
+background-color: blue;
+font-size: 15px;
+font-weight: 600;
+
+/* transition: 0.50s ease-in-out 1s ; transition:shadow-time ease-in-out delay ; */
+/* transition: 0.50s ease-in-out all ; (all use all)  */
+transition: 300ms ease-in-out ; /* 300ms or 0.15s (ease-in-> SLOW AT START || ease-out-> fast at start || ease faster than ease-in/out */
+/* -webkit-transition: ; (if transition not support webkit for crome) */
+/* -moz-transition: ; (mozilla) */
+/* -ms-transition: ; (microsoft) */
+/* -o-transition: ;(opera) */
+
+/* ------------------------------------------------TRANSFORM----------------------------------------------------------------- */
+transform: translate(10px,10px);
+/*---transform: translate(10px,10px)   {transform:translate(x axis,y-axis)} it can use in replace margin------*/
+
+transform: scale(1.15);
+/*----transform: scale(1.15); {transform: scale() it is replace of padding;-----*/
+
+    /* transform: rotate(-20deg); */
+    /* ---transform: rotate(-20deg); (-20 left rotate 20 right rotate) ---*/
+
+ /* transform: skewX(24deg); */
+ /* ----transform: skewY(24deg); {24 left skew -24 right skew }--*/
+
+
+/*---------transform: matrix([scaleX],[skewY],[skewX],[scaleY],[translateX],[translateY])  SHORTHAND PROPERTY;--------------------*/
+
+}
+.button:hover{
+    background-color: gray;
+    padding: 20px 30px;
+}
+
+/* -------------------------------------------------------------ANIMATION--------------------------------------------------------------------- */
+
+
+.animation{
+    animation-name: red-to-black;
+    animation-duration: 4s;
+    animation-timing-function: linear; /*speed */
+    /* animation-delay: 0s;  (if -2s then it start before delay of 2 sec yellow) */
+
+    animation-iteration-count: 2;
+    /* no of count  the animation work */
+
+    animation-direction: alternate; /*(forward then rev)alternate-reverse,reverse,normal*/
+
+/* shorthand */
+/* animation: red-to-black 4s linear 0s 2 alternate; */
+
+    
+}
+/* @keyframes  red-to-black{
+    from{background: red;}    (starting point)
+    to{background: black;}      (ending point)
+
+} */
+ /* if we have multiple background */
+
+ @keyframes  red-to-black{
+      0%{background: red;
+    transform: translate(0px,0px);
+    }
+      50%{background: yellow;
+        transform: translate(10px,10px);
+    }
+      100%{background: black;
+        transform: translate(20px,20px);
+    }
+    /* from{opacity:0}
+       to{opacity:1} */
+       
+    
+ }
+
+
+ /*-------------------------- media querry have type print,screen,alt -----------------
+
+ Media queries are a popular technique for delivering a tailored style sheet to different device*/
+ @media print {
+    body{
+        background: gray;
+        /* can see result in rendering in dev */
+    }
+ }
+ /* @media screen and (orientation:portrait){ also can do in landscape
+    body::after{
+        content: "portrait";
+
+    }
+ } */
+
+ /* @media all and (max-width:500px)  {   (also do min-width) IF WE NOT USE ALL AND IT USE DEFAULT VALUE
+    body{
+        background-color: lightblue;
+    }
+ } */
+
+ /* FOR MULTI MEDIA QUERRY */
+ /* @media (max-width:500px) and (orientation:landscape)  {   
+        body{
+        background-color: lightblue;
+    }
+ } */
+ 
+ /* --------------how to show hidden button in portrait---------- */
+
+ /* <nav class="nav"/> */
+ /* <button class="boss"/> */
+ /* .boss{
+     display: none; default is block;
+    } */
+ 
+/*     
+    @media (min-width:100px){
+    .nav{
+        display: none;
+    }
+    .boss{ 
+
+        display:revert; revert will change to default display
+        backgrounf:transparent; it set color to transparent to background color
+    }
+ } 
+
+ @media (prefers-color-theme:dark){ CAN GET IN RENDERING USUALLY FOR GIV THEME TO OUR WEB(SYSTEM DARK OR LIGHT)
+ body{
+     background:dark;      }                
+}
+ 
+ 
+ */
+
+
+ /* ---------CUSTOM PROPERTIES */
+ /* :root{
+    --backgroung-color:red;
+ }
+ body{
+    background-color: var(--backgroung-color);
+ } */
