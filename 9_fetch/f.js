@@ -54,7 +54,7 @@
 // getData();
 
 // -----------------POST-API-------------
-
+//here chnge this(harglry34748594)  every time after running the code otherwise it will show error  
 function postData(){
     url = "http://dummy.restapiexample.com/api/v1/create";
     data = '{"name":"harglry34748594","salary":"123","age":"23"}'
