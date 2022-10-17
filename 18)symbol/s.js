@@ -18,7 +18,7 @@ const k1 = Symbol('identifier for k1');
 const k2 = Symbol('for k2');
 
 myObj = {};
-myObj[k1] = "Harry";
+myObj[k1] = "bhatta";
 myObj[k2] = "Rohan";
 myObj["name"] = "Good boy"
 myObj[4] = "Good int"
