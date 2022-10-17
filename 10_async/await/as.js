@@ -2,7 +2,7 @@
 // The async function always returns a promise.
 
 async function bhatta(){
-    console.log('Inside harry function');
+    console.log('Inside bhatta function');
     const response = await fetch('https://api.github.com/users');
     console.log('before response');
     const users = await response.json();
